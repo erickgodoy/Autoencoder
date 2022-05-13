@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/jpg" href="{{ url_for('static', filename='images/upgrade.jpg')}}">
+  <title>Proyecto Unidad II</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/style.css')}}">
+
+
+</head>
+
+<body>
+  <main>
+    <div class="container mt-3">
+      <div class="row ">
+        <!-- <div class="col-md-2 mx-auto"></div> -->
+        <div class="col-md-12 d-flex justify-content-center align-items-center">
+          <img class="icon-header" src="{{ url_for('static', filename='images/logo_copabisi.png')}}">
+          <h3>COPABISI</h3>
+        </div>
+        <div class="col-md-12 text-center mt-2">
+          <h4 class="display-10 fw-bold">Trabajo Estudiantil</h4>
+          <h2 class="display-10 fw-bold">Aplicación de Autoencoder en la Mejora de Resolución de Imágenes</h2>
+        </div>
+        <div class="col-md-1 mx-auto"></div>
+      </div>
+    </div>
+
+    <div class="container ">
+      <div class="row">
+        <div class="col-md-12 d-flex justify-content-center align-items-center">
+            <div class="row">
+              <div class="col-md-6">
+                <img class="img-fluid" src="{{ url_for('static', filename='images/image.jpg')}}" alt="Imagen1">
+              </div>
+              <div class="col-md-6">
+                <img class="img-fluid" src="{{ url_for('static', filename='images/image2.jpg')}}" alt="Imagen2">
+              </div>
+            </div>
+        </div>
+
+        <div class="col-md-12 center mt-0">
+              <a class="nav-back" href="{{ url_for('.index')}}">Volver</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="bg-dark text-secondary pb-5 text-center footer">
+      <div class="py-2">
+        <div class="col-lg-6 mx-auto">
+          <p class="fs-5 mt-2">Erick Renán Godoy Llanqui</p>
+        </div>
+      </div>
+    </div> -->
+  </main>
+
+</body>
+</html>
